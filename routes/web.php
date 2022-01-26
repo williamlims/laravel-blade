@@ -22,3 +22,8 @@ Route::get('/dbz', function () {
     $energy = 9000;
     return view('dbz', compact('energy'));
 });
+
+Route::get('/clients', function () {
+    $names = ['Marcos', 'Alexandre', 'William', 'Bruna', 'Mirian', 'Janaina'];
+    return view('clients', compact('names'));
+});
